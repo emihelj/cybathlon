@@ -87,7 +87,7 @@ class ShallowConvNetDev(HyperModel):
         self.n_classes = n_classes
         self.n_channels = n_channels
         #self.n_samples = 250
-        self.n_samples = 250
+        self.n_samples = 1000
 
     def build(self, hp):
         # Search space
