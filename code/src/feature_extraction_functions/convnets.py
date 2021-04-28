@@ -86,6 +86,7 @@ class ShallowConvNetDev(HyperModel):
     def __init__(self, n_classes, n_channels):
         self.n_classes = n_classes
         self.n_channels = n_channels
+        #self.n_samples = 250
         self.n_samples = 250
 
     def build(self, hp):
