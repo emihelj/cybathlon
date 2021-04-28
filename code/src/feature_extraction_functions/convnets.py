@@ -1,7 +1,8 @@
 # Source: https://github.com/robintibor/arl-eegmodels/blob/master/EEGModels.py
 # Hello Ernest
 
-
+import mne
+import scipy
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.constraints import max_norm
