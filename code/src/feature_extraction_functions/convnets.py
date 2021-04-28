@@ -29,10 +29,13 @@ def ShallowConvNet(config: dict = {}):
     in Schirrmeister et. al. (2017), Human Brain Mapping."""
 
     #n_classes = config.get('n_classes', 4)
-    n_classes = config.get('n_classes', 3)
-    n_channels = config.get('n_channels', 61)
+    #n_classes = config.get('n_classes', 3)
+    n_classes = config.get('n_classes')
+    n_channels = config.get('n_channels')
+    n_samples = config.get('n_samples')
+    #n_channels = config.get('n_channels', 61)
     #n_samples = config.get('n_samples', 250)
-    n_samples = config.get('n_samples', 1000)
+    #n_samples = config.get('n_samples', 1000)
     n_filt1 = config.get('n_filt1', 50)
     k_size1 = config.get('k_size1', 10)
     n_filt2 = config.get('n_filt2', 80)
