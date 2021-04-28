@@ -1,7 +1,7 @@
 # Source: https://github.com/robintibor/arl-eegmodels/blob/master/EEGModels.py
 # Hello Ernest
 
-import mne2
+
 import scipy
 import numpy as np
 import tensorflow as tf
@@ -28,9 +28,11 @@ def ShallowConvNet(config: dict = {}):
     """ Keras implementation of the Shallow Convolutional Network as described
     in Schirrmeister et. al. (2017), Human Brain Mapping."""
 
-    n_classes = config.get('n_classes', 4)
+    #n_classes = config.get('n_classes', 4)
+    n_classes = config.get('n_classes', 3)
     n_channels = config.get('n_channels', 61)
-    n_samples = config.get('n_samples', 250)
+    #n_samples = config.get('n_samples', 250)
+    n_samples = config.get('n_samples', 1000)
     n_filt1 = config.get('n_filt1', 50)
     k_size1 = config.get('k_size1', 10)
     n_filt2 = config.get('n_filt2', 80)
